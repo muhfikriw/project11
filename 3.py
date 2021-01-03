@@ -26,6 +26,9 @@ if pil in data:
     from datetime import *
     pengembalian = datetime.date(NOW)
     maksimal = datetime.date(x)
+else:
+    print("data tidak ditemukan")
+    exit()
 if ketemu == True:
     rumus = datetime.date(NOW) - maksimal
     rumus = int(rumus.days)
@@ -43,8 +46,8 @@ if ketemu == True:
          "\nTanggal Mulai Peminjaman       : ",data4[a],
          "\nTanggal Maks Peminjaman        : ",data5[a],
          "\nTanggal Pengembalian           : ",pengembalian,
-         "\ntelat                          : ", rumus,
-         "\nTotal denda                    : ",bayardenda)
+         "\ntelat                          : ", rumus,"Hari"
+         "\nTotal denda                    :  Rp.",bayardenda)
 
 else:
     print("data tidak ditemukan")
